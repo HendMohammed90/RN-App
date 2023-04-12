@@ -18,7 +18,7 @@ const navigator = createStackNavigator(
     Buttons :Buttons
   },
   {
-    initialRouteName: "Buttons",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "App",
     },

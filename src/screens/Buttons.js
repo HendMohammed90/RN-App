@@ -12,6 +12,9 @@ import {
 const Buttons = () => {
     const Separator = () => <View style={styles.separator} />
     const onPress = ()=> console.log('TouchableOpacity has been pressed')
+    const onPressIn = ()=> console.log('TouchableOpacity has been pressed in')
+    const onPressOut = ()=> console.log('TouchableOpacity has been pressed Out')
+
     return (
 
         <SafeAreaView style={styles.container}>
@@ -20,12 +23,17 @@ const Buttons = () => {
                     The title and onPress handler are required. It is recommended to set
                     accessibilityLabel to help make your app usable by everyone.
                 </Text>
-                <Button title="Click Me" onPress={()=>{Alert.alert('Button Clicked')}} accessibilityLabel="press"></Button>
+                {/* <Button title="Click Me" onPress={()=>{Alert.alert('Button Clicked')}} accessibilityLabel="press"></Button>
                 <Separator />
                 <Separator/>
                 <TouchableOpacity onPress={onPress}>
                 <Text>Press Here</Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
+                <Separator />
+                <Separator/>
+                <Pressable onPress={onPress} onPressIn={onPressIn} onPressOut={onPressOut}>
+                    <Text>Press Here</Text>
+                </Pressable>
 
 
             </View>
