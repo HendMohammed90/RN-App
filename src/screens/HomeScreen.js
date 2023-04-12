@@ -4,6 +4,8 @@ import ComponentsScreen from "./ComponentsScreen";
 
 const HomeScreen = (props) => {
   console.log(props)
+  const Separator = () => <View style={styles.separator} />
+
   return <View style={styles.container}>
     <View style={styles.countContainer}>
     <Pressable onPress={()=>props.navigation.navigate("FlatList")} style={styles.button}>
@@ -12,6 +14,10 @@ const HomeScreen = (props) => {
     {/* <TouchableOpacity onPressIn={()=>props.navigation.navigate("FlatList")} >
       <Text>Go To FlatList page</Text>
     </TouchableOpacity> */}
+    <Separator />
+    <Pressable onPress={()=>props.navigation.navigate("ImageItem")} style={styles.button}>
+      <Text>Go To Image Screen</Text>
+    </Pressable>
     </View>
     
   </View>;
@@ -33,6 +39,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 10,
   },
+  separator: {
+    marginVertical: 8,
+    borderBottomColor: '#737373',
+    borderBottomWidth: StyleSheet.hairlineWidth,
+},
 });
 
 
