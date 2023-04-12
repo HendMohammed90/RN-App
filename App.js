@@ -7,7 +7,7 @@ import FlatListData from "./src/screens/FlatList";
 import Exercise2 from "./src/screens/Exercise2";
 import Buttons from "./src/screens/Buttons";
 import ImageItem from "./src/screens/ImageItem";
-
+import Counter from "./src/screens/Counter";
 
 const navigator = createStackNavigator(
   {
@@ -17,7 +17,8 @@ const navigator = createStackNavigator(
     FlatList: FlatListData,
     Exercise2 : Exercise2,
     Buttons :Buttons,
-    ImageItem :ImageItem
+    ImageItem :ImageItem, 
+    Counter : Counter
   },
   {
     initialRouteName: "Home",
