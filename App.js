@@ -5,6 +5,8 @@ import ComponentsScreen from "./src/screens/ComponentsScreen";
 import Exercise1 from './src/screens/Exercise1'
 import FlatListData from "./src/screens/FlatList";
 import Exercise2 from "./src/screens/Exercise2";
+import Buttons from "./src/screens/Buttons";
+
 
 const navigator = createStackNavigator(
   {
@@ -12,10 +14,11 @@ const navigator = createStackNavigator(
     Components : ComponentsScreen,
     Exercise :Exercise1,
     FlatList: FlatListData,
-    Exercise2 : Exercise2
+    Exercise2 : Exercise2,
+    Buttons :Buttons
   },
   {
-    initialRouteName: "Exercise2",
+    initialRouteName: "Buttons",
     defaultNavigationOptions: {
       title: "App",
     },
