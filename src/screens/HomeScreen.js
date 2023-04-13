@@ -22,6 +22,10 @@ const HomeScreen = (props) => {
     <Pressable onPress={()=>props.navigation.navigate("Counter")} style={styles.button}>
       <Text>Go To Counter Screen</Text>
     </Pressable>
+    <Separator />
+    <Pressable onPress={()=>props.navigation.navigate("ColorScreen")} style={styles.button}>
+      <Text>Go To Color Screen </Text>
+    </Pressable>
     </View>
     
   </View>;

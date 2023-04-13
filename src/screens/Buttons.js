@@ -9,6 +9,7 @@ import {
 } from "react-native";
 
 
+
 const Buttons = () => {
     const Separator = () => <View style={styles.separator} />
     const onPress = ()=> console.log('TouchableOpacity has been pressed')
