@@ -3,7 +3,7 @@ import { Text,View , StyleSheet, Pressable, Button , TouchableOpacity } from "re
 import ComponentsScreen from "./ComponentsScreen";
 
 const HomeScreen = (props) => {
-  console.log(props)
+  // console.log(props)
   const Separator = () => <View style={styles.separator} />
 
   return <View style={styles.container}>
@@ -26,8 +26,13 @@ const HomeScreen = (props) => {
     <Pressable onPress={()=>props.navigation.navigate("ColorScreen")} style={styles.button}>
       <Text>Go To Color Screen </Text>
     </Pressable>
+    <Separator />
+    <Pressable onPress={()=>props.navigation.navigate("OneColor")} style={styles.button}>
+      <Text>Go To OneColor Screen </Text>
+    </Pressable>
     </View>
     
+
   </View>;
 };
 
