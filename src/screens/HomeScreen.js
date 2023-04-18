@@ -30,6 +30,19 @@ const HomeScreen = (props) => {
     <Pressable onPress={()=>props.navigation.navigate("OneColor")} style={styles.button}>
       <Text>Go To OneColor Screen </Text>
     </Pressable>
+    <Separator />
+    <Pressable onPress={()=>props.navigation.navigate("app")} style={styles.button}>
+      <Text>Go app Screen </Text>
+    </Pressable>
+    <Separator />
+    <Pressable onPress={()=>props.navigation.navigate("reducer")} style={styles.button}>
+      <Text>Go reducer Screen </Text>
+    </Pressable>
+    <Separator />
+    <Pressable onPress={()=>props.navigation.navigate("textInput")} style={styles.button}>
+      <Text>Go textInput Screen </Text>
+    </Pressable>
+    {/* textInput */}
     </View>
     
 

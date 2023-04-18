@@ -10,7 +10,9 @@ import ImageItem from "./src/screens/ImageItem";
 import Counter from "./src/screens/Counter";
 import ColorScreen from "./src/screens/ColoreScreen";
 import OneColorScreen from "./src/screens/OneColorScreen";
-
+import AppScreen from "./src/screens/Test";
+import ReducerTry from "./src/screens/Reducer";
+import TextScreen from "./src/screens/TextScreen";
 
 const navigator = createStackNavigator(
   {
@@ -23,7 +25,10 @@ const navigator = createStackNavigator(
     ImageItem :ImageItem, 
     Counter : Counter,
     ColorScreen :ColorScreen,
-    OneColor : OneColorScreen
+    OneColor : OneColorScreen,
+    app :AppScreen , 
+    reducer: ReducerTry,
+    textInput :TextScreen
   },
   {
     initialRouteName: "Home",

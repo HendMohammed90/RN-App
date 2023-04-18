@@ -23,7 +23,7 @@ const FlatListData = () => {
     return (
         <View>
             <FlatList
-                horizontal = {true}
+                horizontal = {false}
                 showsHorizontalScrollIndicator = {false}
                 keyExtractor={(item) => item.name}
                 data={data}
